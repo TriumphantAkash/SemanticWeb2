@@ -1,0 +1,35 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:vcard="http://www.w3.org/2001/vcard-rdf/3.0#"
+    xmlns:j.0="http://www.utdallas.edu/semclass#">
+  <j.0:Movie rdf:about="http://www.utdallas.edu/semclass#Dr.Strangelove">
+    <j.0:title>Dr.Strangelove</j.0:title>
+    <j.0:year>1964</j.0:year>
+  </j.0:Movie>
+  <j.0:Movie rdf:about="http://www.utdallas.edu/semclass#A Clockwork Orange">
+    <j.0:title>A Clockwork Orange</j.0:title>
+    <j.0:year>1971</j.0:year>
+  </j.0:Movie>
+  <rdf:Description rdf:about="http://www.utdallas.edu/semclass#Book">
+    <dc:title>Red Alert</dc:title>
+    <dc:date>1958</dc:date>
+    <dc:publisher>RosettaBooks LLC, New York</dc:publisher>
+    <dc:subject>Nuclear War</dc:subject>
+    <j.0:hasAuthor>
+      <j.0:Person rdf:about="Author::Peter">
+        <vcard:N>Peter Bryant</vcard:N>
+        <vcard:FN>Peter Bryan George</vcard:FN>
+        <vcard:BDAY>26 March 1924</vcard:BDAY>
+      </j.0:Person>
+    </j.0:hasAuthor>
+  </rdf:Description>
+  <j.0:Person rdf:about="http://www.utdallas.edu/semclass#Director::kubrick">
+    <vcard:N>Stanley</vcard:N>
+    <vcard:FN>Stanley Kubrick</vcard:FN>
+  </j.0:Person>
+  <rdf:Description rdf:about="http://www.utdallas.edu/semclass#Movie">
+    <j.0:directedBy rdf:resource="http://www.utdallas.edu/semclass#Director::kubrick"/>
+    <j.0:basedOn rdf:resource="http://www.utdallas.edu/semclass#Book"/>
+  </rdf:Description>
+</rdf:RDF>

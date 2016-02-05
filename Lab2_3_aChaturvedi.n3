@@ -1,0 +1,46 @@
+<http://www.utdallas.edu/semclass#Director::kubrick>
+        a       <http://www.utdallas.edu/semclass#Person> ;
+        <http://www.w3.org/2001/vcard-rdf/3.0#FN>
+                "Stanley Kubrick" ;
+        <http://www.w3.org/2001/vcard-rdf/3.0#N>
+                "Stanley" .
+
+<Author::Peter>  a  <http://www.utdallas.edu/semclass#Person> ;
+        <http://www.w3.org/2001/vcard-rdf/3.0#BDAY>
+                "26 March 1924" ;
+        <http://www.w3.org/2001/vcard-rdf/3.0#FN>
+                "Peter Bryan George" ;
+        <http://www.w3.org/2001/vcard-rdf/3.0#N>
+                "Peter Bryant" .
+
+<http://www.utdallas.edu/semclass#Book>
+        <http://purl.org/dc/elements/1.1/date>
+                "1958" ;
+        <http://purl.org/dc/elements/1.1/publisher>
+                "RosettaBooks LLC, New York" ;
+        <http://purl.org/dc/elements/1.1/subject>
+                "Nuclear War" ;
+        <http://purl.org/dc/elements/1.1/title>
+                "Red Alert" ;
+        <http://www.utdallas.edu/semclass#hasAuthor>
+                <Author::Peter> .
+
+<http://www.utdallas.edu/semclass#Movie>
+        <http://www.utdallas.edu/semclass#basedOn>
+                <http://www.utdallas.edu/semclass#Book> ;
+        <http://www.utdallas.edu/semclass#directedBy>
+                <http://www.utdallas.edu/semclass#Director::kubrick> .
+
+<http://www.utdallas.edu/semclass#Dr.Strangelove>
+        a       <http://www.utdallas.edu/semclass#Movie> ;
+        <http://www.utdallas.edu/semclass#title>
+                "Dr.Strangelove" ;
+        <http://www.utdallas.edu/semclass#year>
+                "1964" .
+
+<http://www.utdallas.edu/semclass#A Clockwork Orange>
+        a       <http://www.utdallas.edu/semclass#Movie> ;
+        <http://www.utdallas.edu/semclass#title>
+                "A Clockwork Orange" ;
+        <http://www.utdallas.edu/semclass#year>
+                "1971" .
